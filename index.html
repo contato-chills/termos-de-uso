@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - CHILLS</title>
+    <style>
+        :root {
+            --primary: #FF6B00;
+            --primary-dark: #FF8C00;
+            --bg-dark: #0D0D0D;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text-primary: #FFFFFF;
+            --text-secondary: rgba(255, 255, 255, 0.7);
+            --border-color: rgba(255, 107, 0, 0.3);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Efeito de brilho no topo igual ao app */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -150px;
+            right: -150px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 107, 0, 0.15) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 60px 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo-text {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: 8px;
+            color: var(--text-primary);
+            margin: 0;
+            text-shadow: 0 0 20px rgba(255, 107, 0, 0.4);
+        }
+
+        .subtitle {
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            font-weight: 800;
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p, li {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 40px 0;
+        }
+
+        .deletion-section {
+            border: 1px dashed var(--border-color);
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255, 107, 0, 0.03);
+        }
+
+        .email-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.3);
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 600px) {
+            .card { padding: 25px; }
+            .logo-text { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="logo-text">CHILLS</h1>
+            <div class="subtitle">POLÍTICA DE PRIVACIDADE</div>
+        </header>
+
+        <div class="card">
+            <section>
+                <h2>1. Informações que Coletamos</h2>
+                <p>Coletamos as seguintes informações ao utilizar o CHILLS:</p>
+                
+                <p class="highlight">1.1 Informações Pessoais</p>
+                <ul>
+                    <li><span class="highlight">Nome Completo:</span> Quando você se registra ou faz login via Google ou Apple, podemos coletar seu nome completo.</li>
+                    <li><span class="highlight">E-mail:</span> Coletamos seu e-mail para comunicação e recursos relacionados à sua conta.</li>
+                    <li><span class="highlight">Foto de Perfil:</span> Se você optar por fornecer uma foto de perfil, ela será coletada e armazenada.</li>
+                </ul>
+
+                <p class="highlight">1.2 Informações de Uso</p>
+                <ul>
+                    <li><span class="highlight">Interação com o App:</span> Dados sobre como você utiliza o app, como tempo de uso, jogos jogados e interações.</li>
+                    <li><span class="highlight">Informações do Dispositivo:</span> Modelo do dispositivo, sistema operacional, identificadores de dispositivo.</li>
+                    <li><span class="highlight">Dados de Localização:</span> Coletados apenas se você permitir e se o recurso de localização for ativado.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Como Usamos Suas Informações</h2>
+                <ul>
+                    <li>Para fornecer e melhorar os serviços do CHILLS.</li>
+                    <li>Para personalizar sua experiência no app e sugerir jogos ou desafios relevantes.</li>
+                    <li>Para enviar notificações, promoções e outras comunicações relacionadas.</li>
+                    <li>Para garantir a segurança e integridade do app.</li>
+                    <li>Para analisar o desempenho do aplicativo e corrigir erros técnicos.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Compartilhamento de Informações</h2>
+                <p>Não compartilhamos suas informações pessoais com terceiros, exceto nas seguintes situações:</p>
+                <ul>
+                    <li><span class="highlight">Provedores de serviços:</span> Como o <span class="highlight">Supabase</span> (armazenamento), <span class="highlight">Google Analytics</span> (análise de uso) e <span class="highlight">Sentry</span> (correção de erros).</li>
+                    <li><span class="highlight">Exigências legais:</span> Para cumprir com a lei ou solicitações governamentais.</li>
+                    <li><span class="highlight">Consentimento:</span> Quando você fornecer consentimento explícito.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Armazenamento e Segurança</h2>
+                <p>Tomamos medidas de segurança adequadas para proteger suas informações, como criptografia e práticas de segurança em servidores. Seus dados são armazenados em servidores seguros operados por nós ou por nossos provedores de serviços (como o Supabase).</p>
+                <p>No entanto, nenhuma transmissão de dados pela internet é 100% segura.</p>
+            </section>
+
+            <section>
+                <h2>5. Retenção de Dados</h2>
+                <p>Manteremos suas informações enquanto sua conta estiver ativa. Você pode solicitar a exclusão de suas informações pessoais a qualquer momento.</p>
+            </section>
+
+            <section>
+                <h2>6. Seus Direitos</h2>
+                <ul>
+                    <li>Acesso, Correção e Exclusão de seus dados.</li>
+                    <li>Portabilidade e Revogação de consentimento.</li>
+                </ul>
+                <p>Para exercer seus direitos, entre em contato via e-mail (Seção 9).</p>
+            </section>
+
+            <section>
+                <h2>9. Contato</h2>
+                <p>Dúvidas? Entre em contato por e-mail: <br> 
+                <a href="mailto:contatochills@gmail.com" class="email-link">contatochills@gmail.com</a></p>
+            </section>
+
+            <hr>
+
+            <section class="deletion-section">
+                <h2 style="border-color: #ff4444; color: #ff4444;">Solicitação de Exclusão de Conta</h2>
+                <p>Se você deseja excluir sua conta no CHILLS, envie um e-mail para <span class="highlight">contatochills@gmail.com</span> com o assunto "Solicitação de Exclusão de Conta".</p>
+                
+                <p class="highlight">O que acontece após a solicitação:</p>
+                <ul>
+                    <li>Todos os dados (histórico, pontuações, perfil) serão apagados permanentemente em até 7 dias úteis.</li>
+                    <li>A exclusão é <span class="highlight" style="color: #ff4444;">irreversível</span>.</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            CHILLS &copy; 2026 • TODOS OS DIREITOS RESERVADOS
+        </footer>
+    </div>
+
+</body>
+</html>
