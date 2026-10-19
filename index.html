@@ -1,104 +1,300 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Termos de Serviço - Chills Game</title>
-  <style>
-    :root {
-      --primary: #FF6B00; --primary-dark: #FF8C00; --bg-dark: #0D0D0D;
-      --card-bg: rgba(255,255,255,0.05); --text-primary: #FFFFFF;
-      --text-secondary: rgba(255,255,255,0.7); --border-color: rgba(255,107,0,0.3);
-    }
-    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
-    body { background: var(--bg-dark); color: var(--text-primary); padding: 20px; }
-    .container { max-width: 900px; margin: auto; }
-    .header { text-align: center; margin-bottom: 30px; }
-    .header h1 { font-size: 22px; letter-spacing: 2px; font-weight: 900; }
-    .update { text-align: center; color: var(--primary); font-size: 12px; font-weight: bold; margin-bottom: 30px; }
-    .section { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 20px; backdrop-filter: blur(10px); }
-    .section h2 { font-size: 16px; margin-bottom: 10px; font-weight: 900; letter-spacing: 1px; }
-    .section p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; white-space: pre-line; }
-    .section strong { color: var(--primary); }
-    ul { margin-top: 10px; padding-left: 20px; }
-    li { margin-bottom: 6px; color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Termos de Serviço - Chills Game</title>
+<style>
+:root {
+  --primary: #FF6B00; --primary-dark: #FF8C00; --bg-dark: #0D0D0D;
+  --card-bg: rgba(255,255,255,0.05); --text-primary: #FFFFFF;
+  --text-secondary: rgba(255,255,255,0.7); --border-color: rgba(255,107,0,0.3);
+}
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background: var(--bg-dark); color: var(--text-primary); padding: 20px; }
+.container { max-width: 900px; margin: auto; }
+.header { text-align: center; margin-bottom: 30px; }
+.header h1 { font-size: 22px; letter-spacing: 2px; font-weight: 900; }
+.update { text-align: center; color: var(--primary); font-size: 12px; font-weight: bold; margin-bottom: 30px; }
+.section { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; margin-bottom: 20px; backdrop-filter: blur(10px); }
+.section h2 { font-size: 16px; margin-bottom: 10px; font-weight: 900; letter-spacing: 1px; color: var(--text-primary); }
+.section p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; white-space: pre-line; }
+.section strong { color: var(--primary); }
+.divider { margin: 20px 0; border-top: 1px solid rgba(255,255,255,0.24); }
+ul { margin-top: 10px; padding-left: 20px; }
+li { margin-bottom: 6px; color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+
+/* seletor de idioma */
+.langbar { display: flex; justify-content: center; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+.langbar button {
+  background: transparent; color: var(--text-secondary);
+  border: 1px solid var(--border-color); border-radius: 999px;
+  padding: 7px 16px; font-size: 12px; font-weight: bold; letter-spacing: 1px;
+  cursor: pointer; transition: background .15s, color .15s;
+}
+.langbar button:hover { color: var(--text-primary); }
+.langbar button[aria-current="true"] { background: var(--primary); color: #0D0D0D; border-color: var(--primary); }
+.lang[hidden] { display: none; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="header"><h1>TERMOS DE SERVIÇO</h1></div>
-    <div class="update">Última atualização: 16/06/2026</div>
-
-    <div class="section">
-      <h2>1. Identificação do Responsável</h2>
-      <p>O aplicativo Chills Game é desenvolvido e operado por Vitor Vasconcellos Dias e Rafael Alves Damião da Rocha Neiva, sob o nome Two Devs, com endereço eletrônico contatochills@gmail.com.
+<div class="container">
+<div class="langbar">
+<button type="button" data-l="pt">PORTUGUÊS</button>
+<button type="button" data-l="en">ENGLISH</button>
+<button type="button" data-l="es">ESPAÑOL</button>
+</div>
+<div class="lang" data-lang="pt" data-title="Termos de Serviço - Chills Game">
+<div class="header"><h1>TERMOS DE SERVIÇO</h1></div>
+<div class="update">Última atualização: 19/10/2026</div>
+<div class="section">
+<h2>1. Identificação do Responsável</h2>
+<p>O aplicativo Chills Game é desenvolvido e operado por Vitor Vasconcellos Dias e Rafael Alves Damião da Rocha Neiva, sob o nome Two Devs, com endereço eletrônico contatochills@gmail.com.
 Este documento rege a relação entre o Chills Game e seus usuários, em conformidade com a legislação brasileira aplicável.</p>
-    </div>
-    <div class="section">
-      <h2>2. Aceitação dos Termos</h2>
-      <p>Ao acessar, baixar ou utilizar o Chills Game, você declara que leu, compreendeu e concorda integralmente com estes Termos de Serviço e com a nossa Política de Privacidade.</p>
-    </div>
-    <div class="section">
-      <h2>3. Classificação Etária</h2>
-      <p>O Chills Game é um jogo de festa recomendado para um público adulto. O conteúdo tem caráter de entretenimento social e humor, sem conteúdo sexualmente explícito. Ao utilizar o aplicativo, você declara estar de acordo com a classificação etária indicada na loja de aplicativos.</p>
-    </div>
-    <div class="section">
-      <h2>4. Descrição do Serviço</h2>
-      <p>O Chills Game é um aplicativo de jogos sociais e dinâmicas de entretenimento para grupos, festas e encontros, incluindo:</p>
-      <ul>
-        <li><strong>Esquenta Gelo:</strong> Dinâmicas para quebrar o gelo em grupos.</li>
-        <li><strong>Pecados Capitais:</strong> Jogos com cartas variadas e divertidas.</li>
-        <li><strong>Impostor Sem Filtros:</strong> Jogo de dedução social.</li>
-        <li>Outros jogos de entretenimento social para grupos.</li>
-      </ul>
-      <p>O Chills Game reserva-se o direito de adicionar, modificar ou descontinuar jogos e funcionalidades a qualquer momento.</p>
-    </div>
-    <div class="section">
-      <h2>5. Conta de Usuário</h2>
-      <p>Alguns recursos exigem a criação de uma conta, via Google, Apple ou e-mail. Ao criar sua conta, você concorda em fornecer informações verdadeiras, manter a confidencialidade de suas credenciais e ser responsável pelas atividades realizadas em sua conta.</p>
-    </div>
-    <div class="section">
-      <h2>6. Conduta do Usuário</h2>
-      <p>O Chills Game é um jogo de entretenimento entre adultos. Ao utilizar o aplicativo, você concorda em jogar de forma responsável e consensual, e em não utilizar o app para fins ilegais, ofensivos ou que violem direitos de terceiros.</p>
-      <p>O consumo de bebidas alcoólicas eventualmente sugerido nas dinâmicas é opcional e de inteira responsabilidade do usuário. O Chills Game recomenda o consumo moderado e responsável, e não se destina a incentivar consumo excessivo. Beba com moderação. Não dirija após consumir álcool.</p>
-    </div>
-    <div class="section">
-      <h2>7. Propriedade Intelectual</h2>
-      <p>Todo o conteúdo do Chills Game é de propriedade exclusiva de Two Devs ou de seus licenciadores, protegido pelas leis de propriedade intelectual aplicáveis. É proibido copiar, reproduzir, modificar ou distribuir o conteúdo sem autorização prévia por escrito.</p>
-    </div>
-    <div class="section">
-      <h2>8. Assinaturas e Pagamentos</h2>
-      <p><strong>8.1 Planos:</strong> O Chills Game oferece planos de assinatura semanais, mensais e anuais, com valores e benefícios descritos dentro do aplicativo. A assinatura remove anúncios e desbloqueia conteúdos adicionais.
+</div>
+<div class="section">
+<h2>2. Aceitação dos Termos</h2>
+<p>Ao acessar, baixar ou utilizar o Chills Game, você declara que leu, compreendeu e concorda integralmente com estes Termos de Serviço e com a nossa Política de Privacidade.</p>
+</div>
+<div class="section">
+<h2>3. Classificação Etária</h2>
+<p>O Chills Game é um jogo de festa recomendado para um público adulto. O conteúdo tem caráter de entretenimento social e humor, sem conteúdo sexualmente explícito. Ao utilizar o aplicativo, você declara estar de acordo com a classificação etária indicada na loja de aplicativos.</p>
+</div>
+<div class="section">
+<h2>4. Descrição do Serviço</h2>
+<p>O Chills Game é um aplicativo de jogos sociais e dinâmicas de entretenimento para grupos, festas e encontros, incluindo:</p>
+<ul>
+<li><strong>Esquenta Gelo:</strong> Dinâmicas para quebrar o gelo em grupos.</li>
+<li><strong>Pecados Capitais:</strong> Jogos com cartas variadas e divertidas.</li>
+<li><strong>Impostor Sem Filtros:</strong> Jogo de dedução social.</li>
+<li>Outros jogos de entretenimento social para grupos.</li>
+</ul>
+<p>O Chills Game reserva-se o direito de adicionar, modificar ou descontinuar jogos e funcionalidades a qualquer momento.</p>
+</div>
+<div class="section">
+<h2>5. Conta de Usuário</h2>
+<p>Alguns recursos exigem a criação de uma conta, via Google, Apple ou e-mail. Ao criar sua conta, você concorda em fornecer informações verdadeiras, manter a confidencialidade de suas credenciais e ser responsável pelas atividades realizadas em sua conta.</p>
+</div>
+<div class="section">
+<h2>6. Conduta do Usuário</h2>
+<p>O Chills Game é um jogo de entretenimento entre adultos. Ao utilizar o aplicativo, você concorda em jogar de forma responsável e consensual, e em não utilizar o app para fins ilegais, ofensivos ou que violem direitos de terceiros.</p>
+<p>O consumo de bebidas alcoólicas eventualmente sugerido nas dinâmicas é opcional e de inteira responsabilidade do usuário. O Chills Game recomenda o consumo moderado e responsável, e não se destina a incentivar consumo excessivo. Beba com moderação. Não dirija após consumir álcool.</p>
+</div>
+<div class="section">
+<h2>7. Propriedade Intelectual</h2>
+<p>Todo o conteúdo do Chills Game é de propriedade exclusiva de Two Devs ou de seus licenciadores, protegido pelas leis de propriedade intelectual aplicáveis. É proibido copiar, reproduzir, modificar ou distribuir o conteúdo sem autorização prévia por escrito.</p>
+</div>
+<div class="section">
+<h2>8. Assinaturas e Pagamentos</h2>
+<p><strong>8.1 Planos:</strong> O Chills Game oferece planos de assinatura semanais, mensais e anuais, com valores e benefícios descritos dentro do aplicativo. A assinatura remove anúncios e desbloqueia conteúdos adicionais.
 <strong>8.2 Pagamentos:</strong> Processados exclusivamente pela Google Play Store e Apple App Store.
 <strong>8.3 Renovação Automática:</strong> As assinaturas renovam automaticamente, salvo cancelamento antes do término do ciclo.
 <strong>8.4 Cancelamento:</strong> Pode ser feito a qualquer momento nas configurações da conta da loja.
 <strong>8.5 Reembolsos:</strong> Regidos pelas políticas da loja onde a compra foi realizada.</p>
-    </div>
-    <div class="section">
-      <h2>9. Privacidade</h2>
-      <p>O tratamento de dados é realizado conforme a LGPD (Lei nº 13.709/2018). Consulte nossa Política de Privacidade, parte integrante destes Termos.</p>
-    </div>
-    <div class="section">
-      <h2>10. Isenção de Garantias e Limitação de Responsabilidade</h2>
-      <p>O Chills Game é fornecido "como está", sem garantias de qualquer tipo. Na extensão máxima permitida por lei, não nos responsabilizamos por danos decorrentes do uso ou impossibilidade de uso do aplicativo.</p>
-    </div>
-    <div class="section">
-      <h2>11. Encerramento da Conta</h2>
-      <p>Você pode solicitar o encerramento da sua conta a qualquer momento, no aplicativo ou pelo e-mail contatochills@gmail.com. Também podemos encerrar contas que violem estes Termos.</p>
-    </div>
-    <div class="section">
-      <h2>12. Modificações nos Termos</h2>
-      <p>Podemos atualizar estes Termos a qualquer momento. O uso contínuo após as alterações implica aceitação dos novos termos.</p>
-    </div>
-    <div class="section">
-      <h2>13. Lei Aplicável e Foro</h2>
-      <p>Estes Termos são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da Comarca de Petrópolis, Estado do Rio de Janeiro.</p>
-    </div>
-    <div class="section">
-      <h2>14. Contato</h2>
-      <p><strong>E-mail:</strong> contatochills@gmail.com
+</div>
+<div class="section">
+<h2>9. Privacidade</h2>
+<p>O tratamento de dados é realizado conforme a LGPD (Lei nº 13.709/2018). Consulte nossa Política de Privacidade, parte integrante destes Termos.</p>
+</div>
+<div class="section">
+<h2>10. Isenção de Garantias e Limitação de Responsabilidade</h2>
+<p>O Chills Game é fornecido "como está", sem garantias de qualquer tipo. Na extensão máxima permitida por lei, não nos responsabilizamos por danos decorrentes do uso ou impossibilidade de uso do aplicativo.</p>
+</div>
+<div class="section">
+<h2>11. Encerramento da Conta</h2>
+<p>Você pode solicitar o encerramento da sua conta a qualquer momento, no aplicativo ou pelo e-mail contatochills@gmail.com. Também podemos encerrar contas que violem estes Termos.</p>
+</div>
+<div class="section">
+<h2>12. Modificações nos Termos</h2>
+<p>Podemos atualizar estes Termos a qualquer momento. O uso contínuo após as alterações implica aceitação dos novos termos.</p>
+</div>
+<div class="section">
+<h2>13. Lei Aplicável e Foro</h2>
+<p>Estes Termos são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da Comarca de Petrópolis, Estado do Rio de Janeiro.</p>
+</div>
+<div class="section">
+<h2>14. Contato</h2>
+<p><strong>E-mail:</strong> contatochills@gmail.com
 <strong>Responsável:</strong> Two Devs — Vitor Vasconcellos Dias e Rafael Alves Damião da Rocha Neiva</p>
-    </div>
-  </div>
+</div>
+</div>
+<div class="lang" data-lang="en" data-title="Terms of Service - Chills Game" hidden>
+<div class="header"><h1>TERMS OF SERVICE</h1></div>
+<div class="update">Last updated: 10/19/2026</div>
+<div class="section">
+<h2>1. Identification of the Operator</h2>
+<p>The Chills Game application is developed and operated by Vitor Vasconcellos Dias and Rafael Alves Damião da Rocha Neiva, under the name Two Devs, reachable at contatochills@gmail.com.
+This document governs the relationship between Chills Game and its users, in accordance with applicable Brazilian law.</p>
+</div>
+<div class="section">
+<h2>2. Acceptance of the Terms</h2>
+<p>By accessing, downloading or using Chills Game, you declare that you have read, understood and fully agree with these Terms of Service and with our Privacy Policy.</p>
+</div>
+<div class="section">
+<h2>3. Age Rating</h2>
+<p>Chills Game is a party game recommended for an adult audience. The content is social entertainment and humour, with no sexually explicit content. By using the application, you declare that you agree with the age rating shown on the app store.</p>
+</div>
+<div class="section">
+<h2>4. Description of the Service</h2>
+<p>Chills Game is an application of social games and entertainment activities for groups, parties and get-togethers, including:</p>
+<ul>
+<li><strong>Break the Ice:</strong> Activities to break the ice in groups.</li>
+<li><strong>Deadly Sins:</strong> Games with varied and fun cards.</li>
+<li><strong>Impostor Unfiltered:</strong> A social deduction game.</li>
+<li>Other social entertainment games for groups.</li>
+</ul>
+<p>Chills Game reserves the right to add, change or discontinue games and features at any time.</p>
+</div>
+<div class="section">
+<h2>5. User Account</h2>
+<p>Some features require creating an account, via Google, Apple or e-mail. When creating your account, you agree to provide truthful information, to keep your credentials confidential and to be responsible for the activities carried out in your account.</p>
+</div>
+<div class="section">
+<h2>6. User Conduct</h2>
+<p>Chills Game is an entertainment game among adults. By using the application, you agree to play responsibly and consensually, and not to use the app for illegal or offensive purposes or in ways that violate the rights of others.</p>
+<p>Any consumption of alcoholic beverages occasionally suggested by the activities is optional and entirely the responsibility of the user. Chills Game recommends moderate and responsible consumption and is not intended to encourage excessive drinking. Please drink responsibly. Do not drive after consuming alcohol.</p>
+</div>
+<div class="section">
+<h2>7. Intellectual Property</h2>
+<p>All content in Chills Game is the exclusive property of Two Devs or its licensors, protected by applicable intellectual property laws. Copying, reproducing, modifying or distributing the content without prior written authorization is prohibited.</p>
+</div>
+<div class="section">
+<h2>8. Subscriptions and Payments</h2>
+<p><strong>8.1 Plans:</strong> Chills Game offers weekly, monthly and yearly subscription plans, with prices and benefits described inside the application. The subscription removes ads and unlocks additional content.
+<strong>8.2 Payments:</strong> Processed exclusively by the Google Play Store and the Apple App Store.
+<strong>8.3 Automatic Renewal:</strong> Subscriptions renew automatically unless cancelled before the end of the cycle.
+<strong>8.4 Cancellation:</strong> Can be done at any time in the store account settings.
+<strong>8.5 Refunds:</strong> Governed by the policies of the store where the purchase was made.</p>
+</div>
+<div class="section">
+<h2>9. Privacy</h2>
+<p>Data processing is carried out in accordance with the Brazilian General Data Protection Law, LGPD (Law No. 13,709/2018). Please see our Privacy Policy, which is an integral part of these Terms.</p>
+</div>
+<div class="section">
+<h2>10. Disclaimer of Warranties and Limitation of Liability</h2>
+<p>Chills Game is provided "as is", without warranties of any kind. To the maximum extent permitted by law, we are not liable for damages arising from the use of, or the inability to use, the application.</p>
+</div>
+<div class="section">
+<h2>11. Account Termination</h2>
+<p>You may request the termination of your account at any time, in the application or by e-mail at contatochills@gmail.com. We may also terminate accounts that violate these Terms.</p>
+</div>
+<div class="section">
+<h2>12. Changes to the Terms</h2>
+<p>We may update these Terms at any time. Continued use after the changes implies acceptance of the new terms.</p>
+</div>
+<div class="section">
+<h2>13. Governing Law and Jurisdiction</h2>
+<p>These Terms are governed by the laws of the Federative Republic of Brazil. The courts of the District of Petrópolis, State of Rio de Janeiro, are elected as the competent forum.</p>
+</div>
+<div class="section">
+<h2>14. Contact</h2>
+<p><strong>E-mail:</strong> contatochills@gmail.com
+<strong>Operator:</strong> Two Devs — Vitor Vasconcellos Dias and Rafael Alves Damião da Rocha Neiva</p>
+</div>
+</div>
+<div class="lang" data-lang="es" data-title="Términos de Servicio - Chills Game" hidden>
+<div class="header"><h1>TÉRMINOS DE SERVICIO</h1></div>
+<div class="update">Última actualización: 19/10/2026</div>
+<div class="section">
+<h2>1. Identificación del Responsable</h2>
+<p>La aplicación Chills Game es desarrollada y operada por Vitor Vasconcellos Dias y Rafael Alves Damião da Rocha Neiva, bajo el nombre Two Devs, con dirección electrónica contatochills@gmail.com.
+Este documento rige la relación entre Chills Game y sus usuarios, de acuerdo con la legislación brasileña aplicable.</p>
+</div>
+<div class="section">
+<h2>2. Aceptación de los Términos</h2>
+<p>Al acceder, descargar o utilizar Chills Game, usted declara que ha leído, comprendido y acepta íntegramente estos Términos de Servicio y nuestra Política de Privacidad.</p>
+</div>
+<div class="section">
+<h2>3. Clasificación por Edad</h2>
+<p>Chills Game es un juego de fiesta recomendado para un público adulto. El contenido es de entretenimiento social y humor, sin contenido sexualmente explícito. Al utilizar la aplicación, usted declara estar de acuerdo con la clasificación por edad indicada en la tienda de aplicaciones.</p>
+</div>
+<div class="section">
+<h2>4. Descripción del Servicio</h2>
+<p>Chills Game es una aplicación de juegos sociales y dinámicas de entretenimiento para grupos, fiestas y reuniones, que incluye:</p>
+<ul>
+<li><strong>Rompe el Hielo:</strong> Dinámicas para romper el hielo en grupos.</li>
+<li><strong>Pecados Capitales:</strong> Juegos con cartas variadas y divertidas.</li>
+<li><strong>Impostor Sin Filtros:</strong> Juego de deducción social.</li>
+<li>Otros juegos de entretenimiento social para grupos.</li>
+</ul>
+<p>Chills Game se reserva el derecho de agregar, modificar o descontinuar juegos y funcionalidades en cualquier momento.</p>
+</div>
+<div class="section">
+<h2>5. Cuenta de Usuario</h2>
+<p>Algunas funciones exigen la creación de una cuenta, mediante Google, Apple o correo electrónico. Al crear su cuenta, usted acepta proporcionar información verdadera, mantener la confidencialidad de sus credenciales y ser responsable de las actividades realizadas en su cuenta.</p>
+</div>
+<div class="section">
+<h2>6. Conducta del Usuario</h2>
+<p>Chills Game es un juego de entretenimiento entre adultos. Al utilizar la aplicación, usted acepta jugar de forma responsable y consensuada, y no utilizar la app con fines ilegales, ofensivos o que violen derechos de terceros.</p>
+<p>El consumo de bebidas alcohólicas eventualmente sugerido en las dinámicas es opcional y de entera responsabilidad del usuario. Chills Game recomienda el consumo moderado y responsable, y no pretende incentivar el consumo excesivo. Bebe con moderación. No conduzcas después de consumir alcohol.</p>
+</div>
+<div class="section">
+<h2>7. Propiedad Intelectual</h2>
+<p>Todo el contenido de Chills Game es propiedad exclusiva de Two Devs o de sus licenciantes, protegido por las leyes de propiedad intelectual aplicables. Está prohibido copiar, reproducir, modificar o distribuir el contenido sin autorización previa por escrito.</p>
+</div>
+<div class="section">
+<h2>8. Suscripciones y Pagos</h2>
+<p><strong>8.1 Planes:</strong> Chills Game ofrece planes de suscripción semanales, mensuales y anuales, con precios y beneficios descritos dentro de la aplicación. La suscripción quita los anuncios y desbloquea contenidos adicionales.
+<strong>8.2 Pagos:</strong> Procesados exclusivamente por Google Play Store y Apple App Store.
+<strong>8.3 Renovación Automática:</strong> Las suscripciones se renuevan automáticamente, salvo cancelación antes del término del ciclo.
+<strong>8.4 Cancelación:</strong> Puede hacerse en cualquier momento en la configuración de la cuenta de la tienda.
+<strong>8.5 Reembolsos:</strong> Regidos por las políticas de la tienda donde se realizó la compra.</p>
+</div>
+<div class="section">
+<h2>9. Privacidad</h2>
+<p>El tratamiento de datos se realiza conforme a la Ley General de Protección de Datos de Brasil, LGPD (Ley nº 13.709/2018). Consulte nuestra Política de Privacidad, parte integrante de estos Términos.</p>
+</div>
+<div class="section">
+<h2>10. Exención de Garantías y Limitación de Responsabilidad</h2>
+<p>Chills Game se proporciona "tal como está", sin garantías de ningún tipo. En la máxima medida permitida por la ley, no nos responsabilizamos por daños derivados del uso o de la imposibilidad de uso de la aplicación.</p>
+</div>
+<div class="section">
+<h2>11. Cierre de la Cuenta</h2>
+<p>Usted puede solicitar el cierre de su cuenta en cualquier momento, en la aplicación o por el correo contatochills@gmail.com. También podemos cerrar cuentas que violen estos Términos.</p>
+</div>
+<div class="section">
+<h2>12. Modificaciones de los Términos</h2>
+<p>Podemos actualizar estos Términos en cualquier momento. El uso continuado después de los cambios implica la aceptación de los nuevos términos.</p>
+</div>
+<div class="section">
+<h2>13. Ley Aplicable y Jurisdicción</h2>
+<p>Estos Términos se rigen por las leyes de la República Federativa de Brasil. Se elige el fuero de la Comarca de Petrópolis, Estado de Río de Janeiro.</p>
+</div>
+<div class="section">
+<h2>14. Contacto</h2>
+<p><strong>Correo:</strong> contatochills@gmail.com
+<strong>Responsables:</strong> Two Devs — Vitor Vasconcellos Dias y Rafael Alves Damião da Rocha Neiva</p>
+</div>
+</div>
+</div>
+<script>
+(function () {
+  var guardado = null;
+  try { guardado = localStorage.getItem('chills_lang'); } catch (e) {}
+  var nav = (navigator.language || 'pt').slice(0, 2).toLowerCase();
+  var inicial = guardado || (nav === 'en' || nav === 'es' ? nav : 'pt');
+
+  function trocar(l) {
+    var blocos = document.querySelectorAll('.lang');
+    for (var i = 0; i < blocos.length; i++) {
+      blocos[i].hidden = (blocos[i].getAttribute('data-lang') !== l);
+    }
+    var bts = document.querySelectorAll('.langbar button');
+    for (var j = 0; j < bts.length; j++) {
+      bts[j].setAttribute('aria-current', bts[j].getAttribute('data-l') === l ? 'true' : 'false');
+    }
+    document.documentElement.lang = (l === 'pt' ? 'pt-BR' : l);
+    var t = document.querySelector('.lang[data-lang="' + l + '"]');
+    if (t && t.getAttribute('data-title')) { document.title = t.getAttribute('data-title'); }
+    try { localStorage.setItem('chills_lang', l); } catch (e) {}
+  }
+
+  var bts = document.querySelectorAll('.langbar button');
+  for (var k = 0; k < bts.length; k++) {
+    bts[k].addEventListener('click', function () { trocar(this.getAttribute('data-l')); });
+  }
+  trocar(inicial);
+})();
+</script>
 </body>
 </html>
